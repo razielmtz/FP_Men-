@@ -39,13 +39,13 @@ public static int menú(){
 public static float calculaAreas(int op){
     float area;
     switch(op){
-        case 1;
+        case 1:
             area = areaCuadrado();
-        case 2;
+        case 2:
             area = areaCírculo();
-         case 3;
+         case 3:
             area = areaTriángulo();
-        default;
+         default:
             mensajeSalida();
     }
     return area;
