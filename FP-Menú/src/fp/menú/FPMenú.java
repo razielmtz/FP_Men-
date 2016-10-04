@@ -15,7 +15,9 @@ public class FPMenú {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-              System.out.println("La opcion elegida es: " +  menu());    
+              int o;
+              o = menu();
+              System.out.println("El área es igual a:" + calcularArea(o));    
     }
     public static int menu(){
         Scanner entrada = new Scanner(System.in);
@@ -74,14 +76,13 @@ public class FPMenú {
     }
     public static float areaTriangulo(){
         float area;
-        float base;
-        float altura;
-        area = (base * altura)/2;
-                
+        b = SolicitarDatos("Base:");
+        h = SolicitarDatos("Altura:");
+        area = (float)(b*h/2); //calcular
         return area;
     }
-    public static void mensajeSalida() {
-       
+    public static void mensajeSalida(){
+        System.out.println("Aquí termina el programa"); 
+        System.exit(0);
     }
-    
 }
